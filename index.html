@@ -1,7 +1,178 @@
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: home
+layout: single
+title: "Home"
+permalink: /
 author_profile: true
+classes: wide
 ---
+
+<style>
+  .page__title {
+    display: none;
+  }
+  .hero-summary {
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
+    line-height: 1.7;
+  }
+  .project-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    margin: 1rem 0 2rem;
+  }
+  .project-card {
+    border: 1px solid #d9dde3;
+    border-radius: 12px;
+    padding: 1rem;
+    background: #fff;
+    display: block;
+    text-decoration: none;
+    color: #0f172a;
+  }
+  .project-card h3 {
+    margin-top: 0;
+  }
+  .project-card.card-magnetic {
+    background: #e8f1ff;
+    border-color: #b8d2ff;
+  }
+  .project-card.card-tomography {
+    background: #e6faf5;
+    border-color: #b7eadc;
+  }
+  .project-card.card-enhancement {
+    background: #fff3e5;
+    border-color: #f2d0a8;
+  }
+  .project-card.card-detection {
+    background: #efeaff;
+    border-color: #cfbdfc;
+  }
+  .project-card.card-spectro {
+    background: #e9f7ff;
+    border-color: #b9dff5;
+  }
+  .results-carousel-wrap {
+    position: relative;
+    margin-top: 0.8rem;
+  }
+  .results-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+    padding-bottom: 0.5rem;
+  }
+  .result-slide {
+    min-width: min(100%, 640px);
+    scroll-snap-align: start;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid #d9dde3;
+    border-radius: 12px;
+    background: #fff;
+    overflow: hidden;
+  }
+  .result-slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+</style>
+
+<div class="hero-summary">
+  <h1>Next-Generation Solar Physics with AI</h1>
+</div>
+
+<div class="results-carousel-wrap">
+  <div class="results-carousel" id="results-carousel">
+    <a class="result-slide" href="/projects/#magnetic-field-simulations">
+      <img src="/assets/images/overview/magnetic_field_simulations.jpg" alt="Magnetic field simulations result">
+    </a>
+    <a class="result-slide" href="/projects/#tomographic-reconstructions">
+      <img src="/assets/images/overview/tomography.jpg" alt="Tomographic reconstructions result">
+    </a>
+    <a class="result-slide" href="/projects/#image-enhancement">
+      <img src="/assets/images/overview/image_enhancement.jpg" alt="Image enhancement result">
+    </a>
+    <a class="result-slide" href="/projects/#solar-feature-detection">
+      <img src="/assets/images/overview/feature_detection.jpg" alt="Solar feature detection result">
+    </a>
+    <a class="result-slide" href="/projects/#spectropolarimetric-inversions">
+      <img src="/assets/images/overview/spectropolarimetry.jpg" alt="Spectropolarimetric inversions result">
+    </a>
+  </div>
+</div>
+
+<div class="hero-summary">
+  I am a NASA Jack Eddy Postdoctoral Fellow at NCAR's High Altitude Observatory in Boulder. My research combines heliophysics, machine learning, and scientific computing to model solar magnetic fields, reconstruct the Sun in 3D, enhance solar imaging data, and automate solar feature detection for space weather applications.
+</div>
+
+<h2>Project Overview</h2>
+
+<div class="project-grid">
+  <a class="project-card card-magnetic" href="/projects/#magnetic-field-simulations">
+    <h3>Magnetic Field Simulations</h3>
+    <p>Physics-informed neural networks and force-free field modeling to improve reconstruction of coronal magnetic structures.</p>
+  </a>
+  <a class="project-card card-tomography" href="/projects/#tomographic-reconstructions">
+    <h3>Tomographic Reconstructions</h3>
+    <p>3D reconstruction of the solar EUV corona with neural radiance field approaches such as SuNeRF.</p>
+  </a>
+  <a class="project-card card-enhancement" href="/projects/#image-enhancement">
+    <h3>Image Enhancement</h3>
+    <p>Deep learning methods for cross-instrument translation and quality enhancement in ground-based solar observations.</p>
+  </a>
+  <a class="project-card card-detection" href="/projects/#solar-feature-detection">
+    <h3>Solar Feature Detection</h3>
+    <p>Automated detection of coronal holes and related solar structures from multi-channel image streams.</p>
+  </a>
+  <a class="project-card card-spectro" href="/projects/#spectropolarimetric-inversions">
+    <h3>Spectropolarimetric Inversions</h3>
+    <p>Inversion workflows for retrieving magnetic and atmospheric parameters from polarimetric solar measurements.</p>
+  </a>
+</div>
+
+<script>
+  var autoScrollTimer = null;
+
+  function scrollCarousel(direction) {
+    var container = document.getElementById("results-carousel");
+    if (!container) return;
+    var amount = Math.round(container.clientWidth * 0.9);
+    container.scrollBy({ left: direction * amount, behavior: "smooth" });
+  }
+
+  function startCarouselAutoScroll() {
+    var container = document.getElementById("results-carousel");
+    if (!container) return;
+    stopCarouselAutoScroll();
+    autoScrollTimer = setInterval(function () {
+      var amount = Math.round(container.clientWidth * 0.9);
+      var maxLeft = container.scrollWidth - container.clientWidth;
+      if (container.scrollLeft + amount >= maxLeft - 2) {
+        container.scrollTo({ left: 0, behavior: "smooth" });
+      } else {
+        container.scrollBy({ left: amount, behavior: "smooth" });
+      }
+    }, 3500);
+  }
+
+  function stopCarouselAutoScroll() {
+    if (autoScrollTimer) {
+      clearInterval(autoScrollTimer);
+      autoScrollTimer = null;
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var container = document.getElementById("results-carousel");
+    if (!container) return;
+    startCarouselAutoScroll();
+    container.addEventListener("mouseenter", stopCarouselAutoScroll);
+    container.addEventListener("mouseleave", startCarouselAutoScroll);
+    container.addEventListener("touchstart", stopCarouselAutoScroll, { passive: true });
+    container.addEventListener("touchend", startCarouselAutoScroll);
+  });
+</script>
