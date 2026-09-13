@@ -1,25 +1,32 @@
 ---
 title: "Coronal Holes"
 permalink: /projects/coronal-holes/
+project_category: solar-feature-detection
+project_order: 1
+project_image: /assets/images/projects/coronal-holes-chronnos-figure1.webp
+project_image_alt: "A multichannel view of the solar disk with coronal-hole boundaries traced in red."
+excerpt: "Trace the Sun's gateways to fast solar wind. CHRONNOS combines EUV images and magnetic maps, detecting 98.1% of large coronal holes in its test sample."
+project_summary: "Trace the Sun's gateways to fast solar wind. CHRONNOS combines EUV images and magnetic maps, detecting 98.1% of large coronal holes in its test sample."
 ---
 
-Part of [Solar Feature Detection](/projects/).
+{% include project-styles.html %}
 
-CHRONNOS is a deep learning framework for automated coronal hole detection in full-disk solar observations. Coronal holes are dark regions in extreme-ultraviolet and soft X-ray images associated with open magnetic-field structures and high-speed solar-wind streams, making reliable boundary detection important for solar-cycle studies and space-weather forecasting.
+[Projects](/projects/) / [Solar feature detection](/projects/#solar-feature-detection)
 
-The method uses a convolutional neural network to segment coronal holes from multi-channel SDO observations. The input combines the seven EUV channels from SDO/AIA with line-of-sight magnetograms from SDO/HMI, allowing the network to use chromospheric, coronal, and photospheric magnetic-field information simultaneously. This multi-spectral view helps distinguish true coronal holes from other dark structures such as filaments.
+Coronal holes are dark regions where the Sun's magnetic field opens into interplanetary space. Mapping them consistently helps connect the evolving corona to high-speed solar wind and its effects near Earth.
 
-The primary model, Coronal Hole RecOgnition Neural Network Over multi-Spectral-data (CHRONNOS), uses a progressively growing encoder-decoder architecture. Training starts at low spatial resolution and progressively adds higher-resolution layers, which improves efficiency while preserving both global context across the solar disk and detailed boundary information.
+## CHRONNOS: seeing across wavelengths
 
-The model was evaluated against an independent manually curated test set across solar cycle 24. It achieved an intersection-over-union of 0.63, correctly detected 98.1% of large coronal holes in the evaluated sample, and classified 97.5% of pixels on average. The detections were temporally smooth over days to weeks and showed the expected anti-correlation between total coronal-hole area and sunspot number over the solar cycle.
+**Jarolim et al. (2021), Astronomy & Astrophysics.** CHRONNOS combines seven SDO/AIA EUV channels with SDO/HMI magnetograms. A progressively growing neural network learns both the full-disk context and detailed boundaries, helping distinguish coronal holes from dark filaments.
 
-> Figure placeholder: add primary figure and caption.
+Against independently reviewed labels, it detected **98.1% of 261 large coronal holes** with areas above **1.5 × 10¹⁰ km²** during 2010–2016. Its intersection-over-union was **0.63**. Detections remained consistent from day to day and across changing solar activity, making the method useful for automated solar-cycle studies.
 
-## Quick Summary
-- Objective: provide reliable, fully automatic, real-time coronal hole segmentation across different phases of the solar cycle.
-- Method: train a progressively growing convolutional neural network on seven SDO/AIA EUV channels and SDO/HMI line-of-sight magnetograms to produce full-disk coronal hole masks.
-- Key result: CHRONNOS delivers temporally consistent coronal hole detections, correctly identifies 98.1% of large coronal holes in the test interval, and reduces false detections from filament-like dark structures by combining multi-channel information.
+{% include project-figure.html image="/assets/images/projects/coronal-holes-chronnos-figure1.webp" alt="Composite slices of seven EUV channels and a magnetogram, with CHRONNOS coronal-hole outlines in red." caption="Different wavelengths reveal different parts of the same Sun. CHRONNOS combines them to trace coronal holes while rejecting filament channels that also look dark in EUV." source_url="https://arxiv.org/abs/2104.14313" source_label="Figure 1 · Jarolim et al. (2021), author manuscript" %}
 
-## Reference
+[Read the paper](https://doi.org/10.1051/0004-6361/202140640) · [Open manuscript](https://arxiv.org/abs/2104.14313) · [CHRONNOS code](https://github.com/RobertJaro/MultiChannelCHDetection)
 
-- **Jarolim, R.**, Veronig, A. M., Hofmeister, S., Heinemann, S. G., Temmer, M., Podladchikova, T., Dissauer, K. (2021). Multi-channel coronal hole detection with convolutional neural networks. *Astronomy & Astrophysics*, 652, A13.
+## Testing detections with the community
+
+CHRONNOS also contributes to community validation. A [nine-method comparison](https://doi.org/10.3847/1538-4357/abf2c8) showed that boundary choices can change inferred coronal-hole properties by factors of up to 4.5 in a single case. The subsequent [community benchmark](https://doi.org/10.3847/1538-4365/ad1408) provides 29 challenging observations and results from 14 established schemes, enabling shared tests of true coronal-hole detection and false detections of filaments.
+
+[Explore the benchmark dataset](https://figshare.com/articles/dataset/Coronal_Hole_Detection_Comparison_Dataset/23997993) · [Solar filament detection](/projects/solar-filaments/)

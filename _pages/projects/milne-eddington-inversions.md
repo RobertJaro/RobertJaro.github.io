@@ -1,25 +1,34 @@
 ---
 title: "Milne Eddington Inversions with Physics-Informed Neural Networks"
+project_short_title: "Milne–Eddington Inversions"
 permalink: /projects/milne-eddington-inversions/
+project_category: spectropolarimetric-inversions
+project_order: 1
+project_image: /assets/images/projects/milne-eddington-inversions-thumb.jpg
+project_image_alt: "Solar magnetic field maps inferred from Hinode observations with PINN ME."
+excerpt: "Recover solar magnetic structure from noisy polarized light. PINN ME couples space and time to suppress noise and reveal coherent magnetic features in Hinode observations."
+project_summary: "Recover solar magnetic structure from noisy polarized light. PINN ME couples space and time to suppress noise and reveal coherent magnetic features in Hinode observations."
 ---
 
-Part of [Spectropolarimetric Inversions](/projects/).
+{% include project-styles.html %}
 
-PINN ME is a physics-informed neural network framework for Milne-Eddington inversions of solar spectropolarimetric observations. The method estimates photospheric magnetic field parameters directly from the observed Stokes profiles while retaining the physical forward model used to synthesize polarized spectral lines.
+[← Spectropolarimetric inversions](/projects/#spectropolarimetric-inversions)
 
-Instead of inverting each pixel independently, the neural network represents the full parameter space as a continuous function of image coordinates and time. Input coordinates `(t, x, y)` are mapped to Milne-Eddington parameters such as magnetic field strength, inclination, azimuth, Doppler velocity, line damping, and source-function terms. These parameters are passed through a differentiable Milne-Eddington forward model to synthesize Stokes `I, Q, U, V` profiles, and the network is optimized by minimizing the difference between synthesized and observed profiles.
+**PINN ME extracts solar magnetic fields from polarized spectral lines**, using a continuous neural representation to connect neighboring pixels and time steps.
 
-This coordinate-based representation creates an intrinsic spatial and temporal coupling between neighboring measurements. As a result, the inversion can suppress observational noise, preserve coherent magnetic structure, and remain memory efficient for extended fields of view and time series. The framework can also include the instrumental point-spread function during optimization, allowing the inferred magnetic parameter maps to account for optical blurring effects.
+## Clearer magnetic structure · 2025
 
-The method was validated with analytical test cases, synthetic Stokes profiles from radiative MHD simulations, and Hinode/SOT-SP observations. Compared with standard pixel-wise inversions and established Milne-Eddington tools, PINN ME provides smoother weak-field azimuth estimates, coherent quiet-Sun magnetic elements, and higher-contrast fine structure in sunspot penumbrae while retaining comparable physical consistency.
+The network represents atmospheric parameters and passes them through a differentiable Milne-Eddington model to reproduce observed Stokes profiles. Including the instrumental point-spread function accounts for optical blur. In Hinode/SOT-SP observations, the resulting maps show coherent quiet-Sun magnetic elements, smoother field azimuths, and finer penumbral structure than the standard MERLIN comparison. This observational comparison is qualitative because the true magnetic field is unknown. [Read the paper](https://doi.org/10.3847/2041-8213/add342).
 
-> Figure placeholder: add primary figure and caption.
+{% include project-figure.html image="/assets/images/projects/milne-eddington-inversions-hinode.jpg" alt="PINN ME and MERLIN inversions of Hinode observations, comparing magnetic field components and azimuth in a sunspot and surrounding quiet Sun." caption="Hinode observations reveal coherent weak-field features and detailed penumbral structure. The full maps and enlarged regions compare PINN ME with the standard MERLIN inversions." source_url="https://arxiv.org/html/2502.13924v1#S3.F6" source_label="Figure 6 · Jarolim et al. (2025) · CC BY 4.0" %}
 
-## Quick Summary
-- Objective: infer reliable solar magnetic field parameters from noisy spectropolarimetric observations under the Milne-Eddington approximation.
-- Method: encode the inversion parameter space with a physics-informed neural network that maps `(t, x, y)` coordinates to Milne-Eddington parameters, synthesizes Stokes profiles with a differentiable forward model, and optimizes against observed Stokes `I, Q, U, V`.
-- Key result: PINN ME introduces memory-efficient spatial and temporal coupling, mitigates observational noise, supports PSF-aware inversions, and resolves coherent small-scale magnetic structure in synthetic and Hinode/SOT-SP data.
+## Resisting noise
 
-## Reference
+Analytical time-series tests show that **temporal coupling strongly reduces noise-driven errors**, especially where polarization signals are weak. Radiative-MHD tests provide a more realistic benchmark. The neural representation also makes extended, coupled inversions memory efficient. The current model retains the Milne-Eddington approximation, so it does not resolve atmospheric gradients with height.
 
-- **Jarolim, R.**, Molnar, M. E., Tremblay, B., Centeno, R., Rempel, M. (2025). PINN ME: A physics-informed neural network framework for accurate Milne-Eddington inversions of solar magnetic fields. *The Astrophysical Journal Letters*, 985, L7.
+{% include project-figure.html image="/assets/images/projects/milne-eddington-inversions-noise.jpg" alt="Noise benchmark comparing magnetic-field inversions with and without temporal coupling and point-spread-function correction." caption="A controlled benchmark exposes the benefit of temporal information: PINN ME recovers coherent magnetic patterns even as noise degrades the input spectra." source_url="https://arxiv.org/html/2502.13924v1#S2.F3" source_label="Figure 3 · Jarolim et al. (2025) · CC BY 4.0" %}
+
+## Paper and code
+
+- Jarolim, R., Molnar, M. E., Tremblay, B., Centeno, R., and Rempel, M. (2025). [PINN ME: A Physics-informed Neural Network Framework for Accurate Milne-Eddington Inversions of Solar Magnetic Fields](https://doi.org/10.3847/2041-8213/add342). *The Astrophysical Journal Letters*, 985, L7. [Open manuscript](https://arxiv.org/abs/2502.13924).
+- [PINN ME source code, installation, and Hinode example](https://github.com/RobertJaro/pinn-me).

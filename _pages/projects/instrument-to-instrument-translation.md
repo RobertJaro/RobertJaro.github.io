@@ -1,27 +1,40 @@
 ---
 title: "Instrument-to-Instrument Translation"
 permalink: /projects/instrument-to-instrument-translation/
+project_category: image-enhancement
+project_order: 1
+project_image: /assets/images/projects/instrument-to-instrument-translation-figure5.png
+project_image_alt: "Original HMI solar observations, ITI enhancements, and high-resolution Hinode reference images."
+excerpt: "Give decades of solar observations a common view. ITI connects 24 years of spacecraft data, sharpens solar images, and brings Solar Orbiter onto the SDO calibration scale."
+project_summary: "Give decades of solar observations a common view. ITI connects 24 years of spacecraft data, sharpens solar images, and brings Solar Orbiter onto the SDO calibration scale."
 ---
 
-Part of [Image Enhancement](/projects/).
+{% include project-styles.html %}
 
-Instrument-to-instrument translation (ITI) uses deep learning to homogenize solar observations across different telescopes, missions, and observing conditions. The goal is to make heterogeneous data sets easier to combine by translating lower-quality or differently calibrated observations into the image domain of a modern reference instrument.
+[Projects](/projects/) / [Image enhancement](/projects/#image-enhancement)
 
-This project addresses a recurring challenge in solar physics: instruments improve over time, but earlier observations do not automatically benefit from better spatial resolution, calibration, or image quality. Differences between instruments can limit long-term solar-cycle studies, multi-mission comparisons, and automated pipelines that expect consistent observables. ITI provides a data-driven way to bridge those gaps without requiring perfectly aligned image pairs.
+Better telescopes can improve our view of the past. Instrument-to-Instrument Translation (ITI) learns how different observatories see the Sun, making their images easier to combine across missions, decades, and viewing angles.
 
-The framework is based on unpaired image-to-image translation with generative adversarial networks. A pair of generator networks learns translations between low-quality and high-quality image domains, while discriminator networks enforce that generated images match the target domain. Cycle consistency helps preserve the physical content of the input observations, and an additional noise term allows the model to represent diverse degrading effects such as instrumental blur, atmospheric seeing, or calibration differences.
+## A common language for solar telescopes
 
-Because the method does not require spatial or temporal overlap between instruments, it can be applied to data sets with different observing periods, cadences, fields of view, or vantage points. The framework was demonstrated on four solar-observation tasks: inter-calibrating SOHO/EIT, STEREO/EUVI, SOHO/MDI, SDO/AIA, and SDO/HMI data; super-resolving SDO/HMI continuum observations toward Hinode/SOT-BFI quality; mitigating atmospheric degradation in Kanzelhöhe H-alpha observations; and estimating far-side unsigned magnetic field information from STEREO/EUVI imagery.
+**Jarolim et al. (2025), Nature Communications.** ITI uses unpaired generative adversarial networks, so training does not require matching observations from the same place and time. The framework demonstrated four applications: a homogeneous **24-year record** of EUV images and magnetograms; sharper full-disk continuum images; mitigation of atmospheric degradation in ground-based Hα images; and estimates of unsigned far-side magnetic fields from EUV observations.
 
-The resulting translations produce perceptually similar high-quality observations and more homogeneous multi-instrument time series. For long-term EUV and magnetogram data, the approach supports consistent calibration across more than two solar cycles. For image enhancement tasks, it improves the visibility of fine solar structure while retaining the limits imposed by the information present in the original data.
+Comparisons with simultaneous Hinode observations show improved agreement for reconstructed sunspot and granulation structure. The finest inferred detail remains an estimate: some small features differ from the reference, and synthesized far-side magnetic maps are proxies for the unsigned field.
 
-> Figure placeholder: add primary figure and caption.
+{% include project-figure.html image="/assets/images/projects/instrument-to-instrument-translation-figure5.png" alt="HMI images before and after ITI enhancement, alongside Hinode images and reconstruction error maps." caption="ITI brings out sunspot filaments and granulation in HMI observations. Independent Hinode images test which fine structures the translation recovers." source_url="https://www.nature.com/articles/s41467-025-58391-4/figures/5" source_label="Figure 5 · Jarolim et al. (2025)" %}
 
-## Quick Summary
-- Objective: homogenize solar observations from different instruments and observing conditions so that long-term and multi-mission data sets can be analyzed more consistently.
-- Method: train unpaired GAN-based image translation models with cycle consistency to map low-quality or differently calibrated observations into a high-quality target instrument domain without requiring aligned image pairs.
-- Key result: ITI enables EUV and magnetogram inter-calibration, continuum-image super-resolution, ground-based H-alpha seeing mitigation, and far-side magnetic-field proxy estimation across heterogeneous solar data sets.
+[Read the paper](https://doi.org/10.1038/s41467-025-58391-4) · [Code and trained models](https://github.com/RobertJaro/InstrumentToInstrument) · [Documentation](https://iti-documentation.readthedocs.io/)
 
-## Reference
+Figure reproduced unchanged under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).
 
-- **Jarolim, R.**, Veronig, A. M., Pötzi, W., Podladchikova, T. (2025). A deep learning framework for instrument-to-instrument translation of solar observation data. *Nature Communications*, 16, 3157.
+## Connecting Solar Orbiter and SDO
+
+**Schirninger et al. (2025), Astronomy & Astrophysics.** An extension calibrates Solar Orbiter/EUI Full Sun Imager observations to SDO/AIA in the 174/171 Å and 304 Å channels. It handles Solar Orbiter's changing distance and viewpoint, producing light curves that agree better with AIA than the baseline calibration and images with substantially improved perceptual similarity.
+
+This opens a route to consistent EUV observations from multiple sides of the Sun, supporting solar-cycle research and studies of structures beyond Earth's view.
+
+{% include project-figure.html image="/assets/images/projects/instrument-to-instrument-translation-eui-figure3.webp" alt="EUI, ITI-calibrated EUI, and AIA observations in two EUV channels, with close-ups of active regions." caption="Solar Orbiter's original calibration, ITI translation, and the SDO reference on 20 March 2024. The translation aligns both full-disk appearance and active-region detail." source_url="https://arxiv.org/abs/2509.16383" source_label="Figure 3 · Schirninger et al. (2025), author manuscript" %}
+
+[Read the paper](https://doi.org/10.1051/0004-6361/202556401) · [Open manuscript](https://arxiv.org/abs/2509.16383) · [Code](https://github.com/spaceml-org/InstrumentToInstrument)
+
+Related: [Image quality assessment](/projects/image-quality-assessment/) · [Ground-based image reconstruction](/projects/neural-field-blind-deconvolution/).

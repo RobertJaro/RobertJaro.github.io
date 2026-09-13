@@ -1,59 +1,56 @@
 ---
 permalink: /projects/
 title: "Projects"
+excerpt: "Reconstructing the Sun in 3D, revealing the magnetic fields behind eruptions, and turning solar observations into new scientific discoveries with AI."
 ---
 
-This page highlights the core research areas of my work at the intersection of solar physics and AI. Each sub-project has its own page.
+{% include project-styles.html %}
+
+<p class="research-intro">What powers a solar eruption? What does the far side of the Sun look like? My research combines solar physics and AI to recover the hidden structure of the solar atmosphere and extract more science from every observation.</p>
+
+Explore the results below, with figures from the papers, links to the research, and open-source tools.
+
+<nav class="research-nav" aria-label="Research areas">
+  <a href="#magnetic-field-simulations">Magnetic fields</a>
+  <a href="#tomographic-reconstructions">3D tomography</a>
+  <a href="#image-enhancement">Image enhancement</a>
+  <a href="#solar-feature-detection">Solar features</a>
+  <a href="#spectropolarimetric-inversions">Spectropolarimetry</a>
+</nav>
 
 ## Magnetic Field Simulations
+{: .research-section }
 
-I develop data-driven and physics-informed approaches to model coronal magnetic fields, including nonlinear force-free extrapolations, high-cadence active-region time series, and methods that use multi-height magnetic observations. These models combine photospheric vector magnetograms with physical constraints to infer the three-dimensional magnetic structure and track the storage and release of free magnetic energy.
+Reveal the magnetic architecture that powers solar activity. Physics-informed neural networks connect surface measurements to three-dimensional coronal fields, trace the energy released by flares, and incorporate chromospheric observations to resolve hidden flux ropes.
 
-> Figure placeholder: Magnetic field simulations overview (add image + caption).
-
-Associated sub-projects:
-- [Force-Free Extrapolations](/projects/force-free-extrapolations/)
-- [Multi-Height Magnetic Fields](/projects/multi-height-magnetic-fields/)
-- [Event Studies](/projects/event-studies/)
-- [Global Magnetic Fields](/projects/global-magnetic-fields/)
-- [MHD Simulations of Solar Eruptions](/projects/mhd-simulations-solar-eruptions/)
+{% include project-cards.html category="magnetic-field-simulations" %}
 
 ## Tomographic Reconstructions
+{: .research-section }
 
-I work on 3D reconstruction of the solar atmosphere from multi-view EUV data, including neural radiance field approaches that combine SDO and STEREO observations into continuous spatiotemporal representations of coronal emission and absorption.
+Turn flat images into evolving, three-dimensional views of the Sun. SuNeRF reconstructs the EUV corona from multiple spacecraft; SuNeRF-CME extends the approach to the density and motion of erupting plasma in white light.
 
-> Figure placeholder: Tomographic reconstructions overview (add image + caption).
-
-Associated sub-projects:
-- [EUV Tomography](/projects/euv-tomography/)
-- [White-Light Tomography](/projects/white-light-tomography/)
+{% include project-cards.html category="tomographic-reconstructions" %}
 
 ## Image Enhancement
+{: .research-section }
 
-I build deep learning pipelines for solar image restoration and instrument-to-instrument translation. This includes unpaired domain-translation models that harmonize observations across instruments, missions, and observing conditions, enabling more consistent long-term data series, super-resolution, atmospheric-degradation mitigation, and proxy estimation for missing observables.
+Connect decades of observations and recover fine solar structure. These methods harmonize instruments, identify degraded images, and reconstruct ground-based observations affected by Earth's atmosphere.
 
-> Figure placeholder: Image enhancement overview (add image + caption).
-
-Associated sub-projects:
-- [Instrument-to-Instrument Translation](/projects/instrument-to-instrument-translation/)
-- [Image Quality Assessment](/projects/image-quality-assessment/)
-- [Neural Field Blind Deconvolution](/projects/neural-field-blind-deconvolution/)
+{% include project-cards.html category="image-enhancement" %}
 
 ## Solar Feature Detection
+{: .research-section }
 
-I design AI systems for automated detection and tracking of solar structures. This includes multi-channel segmentation models for coronal holes and related feature-detection pipelines that combine EUV imaging with magnetic-field information for consistent long-term monitoring.
+Follow the structures that shape space weather: coronal holes that feed the solar wind and filaments that can erupt. Automated detection turns large solar archives into consistent maps of activity.
 
-> Figure placeholder: Solar feature detection overview (add image + caption).
-
-Associated sub-projects:
-- [Coronal Holes](/projects/coronal-holes/)
-- [Solar Filaments](/projects/solar-filaments/)
+{% include project-cards.html category="solar-feature-detection" %}
 
 ## Spectropolarimetric Inversions
+{: .research-section }
 
-I develop inversion workflows that infer atmospheric and magnetic parameters from spectropolarimetric observations. Current work uses physics-informed neural networks to encode Milne-Eddington inversion parameters as a continuous spatiotemporal representation, coupling neighboring pixels and time steps to reduce noise while fitting the observed Stokes profiles with a differentiable forward model.
+Read the Sun's magnetic fingerprints in polarized light. A continuous neural representation couples neighboring measurements in space and time, helping recover coherent magnetic structure from noisy spectra.
 
-> Figure placeholder: Spectropolarimetric inversions overview (add image + caption).
+{% include project-cards.html category="spectropolarimetric-inversions" %}
 
-Associated sub-projects:
-- [Milne Eddington Inversions with Physics-Informed Neural Networks](/projects/milne-eddington-inversions/)
+For complete author lists and publication details, see [Publications]({{ '/publications/' | relative_url }}). Figure captions link to their original sources; click a figure on a project page to open the full image.
