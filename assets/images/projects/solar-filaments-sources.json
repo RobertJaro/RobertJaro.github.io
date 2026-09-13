@@ -1,0 +1,36 @@
+[
+  {
+    "file": "solar-filaments-detection-figure8.webp",
+    "paper_title": "A universal method for solar filament detection from H-alpha observations using semi-supervised deep learning",
+    "figure": "Figure 8",
+    "source_url": "https://arxiv.org/abs/2402.15407",
+    "download_url": "https://arxiv.org/pdf/2402.15407",
+    "license": "CC BY 4.0 (published article)",
+    "crop": "Full figure; surrounding page text removed",
+    "pdf_page": 9,
+    "crop_pixels_on_1000px_page": [
+      44,
+      66,
+      653,
+      383
+    ],
+    "accessed": "2026-09-13"
+  },
+  {
+    "file": "solar-filaments-eruption-figure13.webp",
+    "paper_title": "A universal method for solar filament detection from H-alpha observations using semi-supervised deep learning",
+    "figure": "Figure 13",
+    "source_url": "https://arxiv.org/abs/2402.15407",
+    "download_url": "https://arxiv.org/pdf/2402.15407",
+    "license": "CC BY 4.0 (published article)",
+    "crop": "Full figure; surrounding page text removed",
+    "pdf_page": 13,
+    "crop_pixels_on_1000px_page": [
+      43,
+      77,
+      666,
+      365
+    ],
+    "accessed": "2026-09-13"
+  }
+]

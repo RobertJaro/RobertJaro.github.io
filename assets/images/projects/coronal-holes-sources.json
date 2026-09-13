@@ -1,0 +1,19 @@
+[
+  {
+    "file": "coronal-holes-chronnos-figure1.webp",
+    "paper_title": "Multi-channel coronal hole detection with convolutional neural networks",
+    "figure": "Figure 1",
+    "source_url": "https://arxiv.org/abs/2104.14313",
+    "download_url": "https://arxiv.org/pdf/2104.14313",
+    "license": "Copyright ESO 2021; figure from author manuscript",
+    "crop": "Full figure; surrounding page text removed",
+    "pdf_page": 2,
+    "crop_pixels_on_1000px_page": [
+      42,
+      65,
+      349,
+      372
+    ],
+    "accessed": "2026-09-13"
+  }
+]

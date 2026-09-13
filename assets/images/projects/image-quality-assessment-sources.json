@@ -1,0 +1,19 @@
+[
+  {
+    "file": "image-quality-assessment-figure4.webp",
+    "paper_title": "Image-quality assessment for full-disk solar observations with generative adversarial networks",
+    "figure": "Figure 4",
+    "source_url": "https://arxiv.org/abs/2008.12030",
+    "download_url": "https://arxiv.org/pdf/2008.12030",
+    "license": "Copyright ESO 2020; figure from author manuscript",
+    "crop": "Full figure; surrounding page text removed",
+    "pdf_page": 9,
+    "crop_pixels_on_1000px_page": [
+      41,
+      64,
+      349,
+      368
+    ],
+    "accessed": "2026-09-13"
+  }
+]

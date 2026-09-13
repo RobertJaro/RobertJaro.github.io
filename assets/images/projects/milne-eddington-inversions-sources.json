@@ -1,0 +1,47 @@
+[
+  {
+    "file": "milne-eddington-inversions-hinode.jpg",
+    "paper_title": "PINN ME: A Physics-informed Neural Network Framework for Accurate Milne-Eddington Inversions of Solar Magnetic Fields",
+    "figure": "6",
+    "source_url": "https://doi.org/10.3847/2041-8213/add342",
+    "download_url": "https://arxiv.org/html/2502.13924v1/hinode_comparison.jpg",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "processing": "Full figure; resized preserving aspect ratio and JPEG compressed.",
+    "dimensions": [
+      2000,
+      1559
+    ],
+    "sha256": "2f1f333801451217ede4254220af635d81f487e1ead63b4265a7f2355ab2b7e7",
+    "retrieved": "2026-09-13"
+  },
+  {
+    "file": "milne-eddington-inversions-thumb.jpg",
+    "paper_title": "PINN ME: A Physics-informed Neural Network Framework for Accurate Milne-Eddington Inversions of Solar Magnetic Fields",
+    "figure": "6a (PINN ME line-of-sight magnetic field)",
+    "source_url": "https://doi.org/10.3847/2041-8213/add342",
+    "download_url": "https://arxiv.org/html/2502.13924v1/hinode_comparison.jpg",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "processing": "Cropped original 2166x1688 figure to pixel box [110,110,720,418], resized to 1000x505. Card illustration; complete labeled figure appears on project page.",
+    "dimensions": [
+      1000,
+      505
+    ],
+    "sha256": "e1d947746f4ede0c6a931508fb0da26c3cc564418c1514071ce20ecc6a7a5879",
+    "retrieved": "2026-09-13"
+  },
+  {
+    "file": "milne-eddington-inversions-noise.jpg",
+    "paper_title": "PINN ME: A Physics-informed Neural Network Framework for Accurate Milne-Eddington Inversions of Solar Magnetic Fields",
+    "figure": "3",
+    "source_url": "https://doi.org/10.3847/2041-8213/add342",
+    "download_url": "https://arxiv.org/html/2502.13924v1/test_set_evaluation.jpg",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "processing": "Full figure; JPEG compressed.",
+    "dimensions": [
+      873,
+      2394
+    ],
+    "sha256": "a2396067f53628ad56af1ba204d73908835c604c8eb27ceeea1e7d208979609c",
+    "retrieved": "2026-09-13"
+  }
+]

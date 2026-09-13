@@ -1,0 +1,30 @@
+[
+  {
+    "file": "instrument-to-instrument-translation-eui-figure3.webp",
+    "paper_title": "Image calibration between the Extreme Ultraviolet Imagers on Solar Orbiter and the Solar Dynamics Observatory",
+    "figure": "Figure 3",
+    "source_url": "https://arxiv.org/abs/2509.16383",
+    "download_url": "https://arxiv.org/pdf/2509.16383",
+    "license": "CC BY 4.0 (published article)",
+    "crop": "Full figure; surrounding page text removed",
+    "pdf_page": 5,
+    "crop_pixels_on_1000px_page": [
+      48,
+      69,
+      661,
+      666
+    ],
+    "accessed": "2026-09-13"
+  },
+  {
+    "file": "instrument-to-instrument-translation-figure5.png",
+    "paper_title": "A deep learning framework for instrument-to-instrument translation of solar observation data",
+    "figure": "Figure 5",
+    "source_url": "https://www.nature.com/articles/s41467-025-58391-4",
+    "download_url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41467-025-58391-4/MediaObjects/41467_2025_58391_Fig5_HTML.png",
+    "license": "CC BY-NC-ND 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "crop": "None; original full publisher figure, unchanged",
+    "accessed": "2026-09-13"
+  }
+]

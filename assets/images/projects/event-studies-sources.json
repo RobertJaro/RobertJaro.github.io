@@ -1,0 +1,43 @@
+{
+  "accessed": "2026-09-13",
+  "figures": [
+    {
+      "asset": "event-studies-card.webp",
+      "paper_or_project_title": "Magnetic Field Evolution of the Solar Active Region 13664",
+      "figure": "5c",
+      "source_url": "https://doi.org/10.3847/2041-8213/ad8914",
+      "download_url": "https://arxiv.org/html/2409.08124v1/X4_flare_overview.jpg",
+      "license": "ArXiv-distributed author manuscript; no additional figure license asserted.",
+      "crop": [
+        0,
+        1725,
+        1618,
+        2577
+      ],
+      "processing": "Converted to WebP, quality 89; full figures resized to fit within 1700 × 2100 px without changing content.",
+      "notes": "Complete panel c extracted from 1618 × 3503 image. The preprint calls this flare X4.0; published work refers to X3.9. Website avoids a class label for this individual event."
+    },
+    {
+      "asset": "event-studies-filament.webp",
+      "paper_or_project_title": "Magnetic structure and asymmetric eruption of a 500 Mm filament rooted in weak-field regions",
+      "figure": "5",
+      "source_url": "https://doi.org/10.1051/0004-6361/202555860",
+      "download_url": "https://arxiv.org/html/2508.18121v1/NLFFF_overview_11.png",
+      "license": "ArXiv nonexclusive distribution license; publisher license not independently verified.",
+      "crop": null,
+      "processing": "Converted to WebP, quality 89; full figures resized to fit within 1700 × 2100 px without changing content.",
+      "notes": null
+    },
+    {
+      "asset": "event-studies-dome.webp",
+      "paper_or_project_title": "Magnetic Reconnection in a Compact Magnetic Dome: Chromospheric Emissions and High-velocity Plasma Flows",
+      "figure": "6",
+      "source_url": "https://doi.org/10.3847/1538-4357/adcf23",
+      "download_url": "https://arxiv.org/html/2502.04292v2/extrapol3_v2.png",
+      "license": "ArXiv nonexclusive distribution license; publisher license not independently verified.",
+      "crop": null,
+      "processing": "Converted to WebP, quality 89; full figures resized to fit within 1700 × 2100 px without changing content.",
+      "notes": "Uses updated v2 manuscript, which identifies the striking Ca II K annulus in another figure as a reconstruction artifact. That artifact is not described as a physical result."
+    }
+  ]
+}

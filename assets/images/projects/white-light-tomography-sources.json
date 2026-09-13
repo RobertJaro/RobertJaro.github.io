@@ -1,0 +1,47 @@
+[
+  {
+    "file": "white-light-tomography-overview.jpg",
+    "paper_title": "SuNeRF-CME: Physics-informed Neural Radiance Fields for Tomographic Reconstruction of Coronal Mass Ejections",
+    "figure": "2",
+    "source_url": "https://doi.org/10.3847/1538-4357/ae6e39",
+    "download_url": "https://arxiv.org/pdf/2509.13571v2",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "processing": "PDF page 10 rendered at 180 dpi with pdftoppm. Cropped full figure to pixel box [790,153,1410,1320], removing page text and caption.",
+    "dimensions": [
+      620,
+      1167
+    ],
+    "sha256": "ebd6346adee0f93bc13f125a3da80c03a4814740eb5dbab62d912274a6b07934",
+    "retrieved": "2026-09-13"
+  },
+  {
+    "file": "white-light-tomography-thumb.jpg",
+    "paper_title": "SuNeRF-CME: Physics-informed Neural Radiance Fields for Tomographic Reconstruction of Coronal Mass Ejections",
+    "figure": "2c",
+    "source_url": "https://doi.org/10.3847/1538-4357/ae6e39",
+    "download_url": "https://arxiv.org/pdf/2509.13571v2",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "processing": "PDF page 10 rendered at 180 dpi. Cropped bottom density and velocity panels to pixel box [800,915,1410,1320]. Card illustration; complete labeled figure appears on project page.",
+    "dimensions": [
+      610,
+      405
+    ],
+    "sha256": "50fd38543403888345a41907f4dcb9651a16194a2d020a0716e1460280e449dc",
+    "retrieved": "2026-09-13"
+  },
+  {
+    "file": "white-light-tomography-structure.jpg",
+    "paper_title": "SuNeRF-CME: Physics-informed Neural Radiance Fields for Tomographic Reconstruction of Coronal Mass Ejections",
+    "figure": "5",
+    "source_url": "https://doi.org/10.3847/1538-4357/ae6e39",
+    "download_url": "https://arxiv.org/pdf/2509.13571v2",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "processing": "PDF page 14 rendered at 180 dpi with pdftoppm. Cropped full figure to pixel box [151,160,1385,1373], removing page text and caption.",
+    "dimensions": [
+      1234,
+      1213
+    ],
+    "sha256": "8908b8b511665df8d60b511571defc23e06e225faabfe327376c96a774b06d92",
+    "retrieved": "2026-09-13"
+  }
+]

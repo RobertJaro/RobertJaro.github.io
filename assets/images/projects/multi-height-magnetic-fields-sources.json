@@ -1,0 +1,51 @@
+{
+  "accessed": "2026-09-13",
+  "figures": [
+    {
+      "asset": "multi-height-magnetic-fields-2026.webp",
+      "paper_or_project_title": "Chromospheric Magnetic Field Extrapolations Reveal the Flux-rope Configuration of a Solar Filament",
+      "figure": "5",
+      "source_url": "https://doi.org/10.3847/2041-8213/ae9873",
+      "download_url": "https://eprints.whiterose.ac.uk/id/eprint/245031/1/Jarolim_2026_ApJL_1008_L14.pdf",
+      "license": "CC BY 4.0",
+      "crop": [
+        95,
+        121,
+        1366,
+        1581
+      ],
+      "processing": "Converted to WebP, quality 89; full figures resized to fit within 1700 × 2100 px without changing content.",
+      "notes": "Extracted from PDF page 13 (journal page 12), rendered by pdftoppm with scale-to 1900; crop excludes journal header, caption and body text. This is the final published figure, not the differing arXiv v1 figure."
+    },
+    {
+      "asset": "multi-height-magnetic-fields-card.webp",
+      "paper_or_project_title": "Chromospheric Magnetic Field Extrapolations Reveal the Flux-rope Configuration of a Solar Filament",
+      "figure": "5d",
+      "source_url": "https://doi.org/10.3847/2041-8213/ae9873",
+      "download_url": "https://eprints.whiterose.ac.uk/id/eprint/245031/1/Jarolim_2026_ApJL_1008_L14.pdf",
+      "license": "CC BY 4.0",
+      "crop": [
+        149,
+        505,
+        1290,
+        1022
+      ],
+      "processing": "Extracted complete panel d from the PDF rendered at 1469 × 1900 px; tightened the bottom crop to exclude adjacent-panel labels, added a 12 px white border on all sides, and converted to WebP at quality 89. No scientific content or labels within panel d altered.",
+      "notes": "PDF page 13 (journal page 12), Figure 5d. All panel d axes and labels retained; no adjacent panel text included. Visually checked after crop adjustment.",
+      "width": 1165,
+      "height": 541,
+      "sha256": "fbb80ab61dabf61a214c1284907f4cf0dfaa9ab4855ebd14e7d6d2b5e46bc361"
+    },
+    {
+      "asset": "multi-height-magnetic-fields-2024.webp",
+      "paper_or_project_title": "Advancing Solar Magnetic Field Extrapolations through Multiheight Magnetic Field Measurements",
+      "figure": "4",
+      "source_url": "https://doi.org/10.3847/2041-8213/ad2450",
+      "download_url": "https://arxiv.org/html/2312.06823v1/observation_comparison.jpg",
+      "license": "ArXiv-distributed author manuscript; no additional figure license asserted.",
+      "crop": null,
+      "processing": "Converted to WebP, quality 89; full figures resized to fit within 1700 × 2100 px without changing content.",
+      "notes": "Figure downloaded from the linked author manuscript; published citation used in page."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{% assign category_projects = site.pages | where: 'project_category', include.category | sort: 'project_order' %}
+<div class="research-grid">
+  {% for project in category_projects %}
+  <article class="research-card">
+    <a class="research-card__image" href="{{ project.url | relative_url }}" tabindex="-1" aria-label="Explore {{ project.title | escape }}">
+      <img src="{{ project.project_image | relative_url }}" alt="{{ project.project_image_alt | escape }}" loading="lazy" decoding="async">
+    </a>
+    <div class="research-card__body">
+      {% if project.project_status %}<p class="research-card__status">{{ project.project_status | escape }}</p>{% endif %}
+      <h3><a href="{{ project.url | relative_url }}">{{ project.project_short_title | default: project.title | escape }}</a></h3>
+      <p>{{ project.project_summary | escape }}</p>
+      <a class="research-card__link" href="{{ project.url | relative_url }}" aria-label="Explore {{ project.title | escape }}">Results, papers &amp; code <span aria-hidden="true">&rarr;</span></a>
+    </div>
+  </article>
+  {% endfor %}
+</div>

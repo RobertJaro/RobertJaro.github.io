@@ -1,0 +1,36 @@
+[
+  {
+    "file": "neural-field-blind-deconvolution-dkist-figure8a.webp",
+    "paper_title": "Neural blind deconvolution to reconstruct high-resolution ground-based solar observations",
+    "figure": "Figure 8a",
+    "source_url": "https://arxiv.org/abs/2603.05033",
+    "download_url": "https://arxiv.org/pdf/2603.05033",
+    "license": "See linked manuscript / published article",
+    "crop": "Panel a only; remaining figure panels and surrounding page text removed",
+    "pdf_page": 10,
+    "crop_pixels_on_1000px_page": [
+      91,
+      70,
+      623,
+      495
+    ],
+    "accessed": "2026-09-13"
+  },
+  {
+    "file": "neural-field-blind-deconvolution-burst-figure3.webp",
+    "paper_title": "Deep learning image burst stacking to reconstruct high-resolution ground-based solar observations",
+    "figure": "Figure 3",
+    "source_url": "https://arxiv.org/abs/2506.04781",
+    "download_url": "https://arxiv.org/pdf/2506.04781",
+    "license": "CC BY 4.0 (published article)",
+    "crop": "Full figure; surrounding page text removed",
+    "pdf_page": 4,
+    "crop_pixels_on_1000px_page": [
+      368,
+      306,
+      646,
+      813
+    ],
+    "accessed": "2026-09-13"
+  }
+]

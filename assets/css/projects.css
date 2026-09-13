@@ -1,0 +1,26 @@
+.research-intro { max-width: 52rem; font-size: 1.12em; line-height: 1.65; }
+.research-nav { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1.5rem 0 2rem; }
+.research-nav a { padding: .4rem .7rem; border: 1px solid #c8d4e0; border-radius: .35rem; background: #f4f7fa; color: #243f59; font-size: .78em; text-decoration: none; }
+.research-nav a:hover, .research-nav a:focus-visible { background: #e4edf5; }
+.research-section { scroll-margin-top: 2rem; }
+.research-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.2rem; margin: 1.25rem 0 2.5rem; }
+.research-card { display: flex; flex-direction: column; overflow: hidden; min-width: 0; border: 1px solid #d9e0e6; border-radius: .65rem; background: #fff; }
+.research-card__image { display: block; position: relative; flex: none; width: 100%; aspect-ratio: 16 / 10; border-bottom: 1px solid #e8edf1; background: #f5f7f9; }
+.research-card__image img { position: absolute; inset: .65rem; width: calc(100% - 1.3rem); height: calc(100% - 1.3rem); object-fit: contain; }
+.research-card__body { display: flex; flex: 1; flex-direction: column; align-items: flex-start; padding: 1rem; }
+.page__content .research-card h3 { margin: 0 0 .6rem; font-size: 1em; line-height: 1.35; }
+.research-card h3 a { color: #243f59; text-decoration: none; }
+.page__content .research-card p { margin: 0 0 1rem; font-size: .82em; line-height: 1.6; }
+.page__content .research-card .research-card__status { margin-bottom: .55rem; font-size: .65em; font-weight: 700; color: #506173; letter-spacing: .025em; }
+.research-card__link { margin-top: auto; font-size: .75em; font-weight: 600; }
+.research-card a:focus-visible, .research-nav a:focus-visible, .research-figure a:focus-visible { outline: 3px solid #3a739b; outline-offset: 3px; }
+.page__content .research-figure { display: block; margin: 1.5rem 0 2rem; }
+.research-figure > a { display: block; padding: .65rem; border: 1px solid #e0e5e9; border-radius: .45rem; background: #fff; }
+.research-figure img { display: block; width: auto; height: auto; max-width: 100%; max-height: 48rem; margin: 0 auto; }
+.research-figure figcaption { margin-top: .6rem; color: #52606c; font-size: .72em; line-height: 1.6; text-align: left; }
+.research-figure figcaption a { white-space: normal; }
+@media (max-width: 600px) {
+  .research-grid { grid-template-columns: minmax(0, 1fr); }
+  .research-card__image { aspect-ratio: 16 / 9; }
+  .research-nav { gap: .4rem; }
+}

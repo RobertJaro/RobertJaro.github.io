@@ -1,0 +1,27 @@
+{
+  "accessed": "2026-09-13",
+  "figures": [
+    {
+      "asset": "mhd-simulations-solar-eruptions-digital-twin.webp",
+      "paper_or_project_title": "Digital Twin of the Sun",
+      "figure": "Project illustration",
+      "source_url": "https://ncarprojects.ucar.edu/ai/science/sun",
+      "download_url": "https://ncarprojects.ucar.edu/sites/default/files/2026-03/image1_11.png",
+      "license": "NSF NCAR/UCAR project illustration; no explicit image license found.",
+      "crop": null,
+      "processing": "Converted to WebP, quality 89; full figures resized to fit within 1700 × 2100 px without changing content.",
+      "notes": "Research-direction illustration, not a claimed completed eruption-simulation result."
+    },
+    {
+      "asset": "mhd-simulations-solar-eruptions-enlil.webp",
+      "paper_or_project_title": "CME propagation through the heliosphere: Status and future of observations and model development",
+      "figure": "9",
+      "source_url": "https://doi.org/10.1016/j.asr.2023.07.003",
+      "download_url": "https://arxiv.org/html/2308.04851v1/fig2_8.png",
+      "license": "Review: CC BY 4.0, verified in published PDF. Figure originally from NOAA/SWPC.",
+      "crop": null,
+      "processing": "Converted to WebP, quality 89; full figures resized to fit within 1700 × 2100 px without changing content.",
+      "notes": "NOAA WSA–ENLIL illustration reproduced in review; clearly attributed as contextual example, not the author’s own MHD solver. Published PDF inspected at https://ntrs.nasa.gov/api/citations/20230010368/downloads/Temmer_CME.pdf"
+    }
+  ]
+}

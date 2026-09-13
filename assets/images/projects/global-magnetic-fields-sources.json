@@ -1,0 +1,32 @@
+{
+  "accessed": "2026-09-13",
+  "figures": [
+    {
+      "asset": "global-magnetic-fields-figure-15.webp",
+      "paper_or_project_title": "Comprehensive solar eruption analyses enabled by the tools of the SOLER project",
+      "figure": "15",
+      "source_url": "https://arxiv.org/html/2608.24458v1#S3.F15",
+      "download_url": "https://arxiv.org/html/2608.24458v1/pinn_global.png",
+      "license": "ArXiv perpetual nonexclusive distribution license; not asserted to be CC BY.",
+      "crop": null,
+      "processing": "Converted to WebP, quality 89; full figures resized to fit within 1700 × 2100 px without changing content.",
+      "notes": "Preprint under review as of the website bibliography update; described as preprint results."
+    },
+    {
+      "asset": "global-magnetic-fields-card.webp",
+      "paper_or_project_title": "Comprehensive solar eruption analyses enabled by the tools of the SOLER project",
+      "figure": "15a–c",
+      "source_url": "https://arxiv.org/html/2608.24458v1#S3.F15",
+      "download_url": "https://arxiv.org/html/2608.24458v1/pinn_global.png",
+      "license": "ArXiv perpetual nonexclusive distribution license; not asserted to be CC BY.",
+      "crop": [
+        0,
+        0,
+        1048,
+        380
+      ],
+      "processing": "Converted to WebP, quality 89; full figures resized to fit within 1700 × 2100 px without changing content.",
+      "notes": "Top row cropped from 1048 × 624 px figure."
+    }
+  ]
+}

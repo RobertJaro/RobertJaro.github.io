@@ -1,0 +1,32 @@
+{
+  "accessed": "2026-09-13",
+  "figures": [
+    {
+      "asset": "force-free-extrapolations-figure-4.webp",
+      "paper_or_project_title": "Probing the solar coronal magnetic field with physics-informed neural networks",
+      "figure": "4",
+      "source_url": "https://www.nature.com/articles/s41550-023-02030-9/figures/4",
+      "download_url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41550-023-02030-9/MediaObjects/41550_2023_2030_Fig4_HTML.png",
+      "license": "Version-of-record publisher figure; no Creative Commons license asserted. The separate Research Square preprint is CC BY 4.0.",
+      "crop": null,
+      "processing": "Converted to WebP, quality 89; full figures resized to fit within 1700 × 2100 px without changing content.",
+      "notes": null
+    },
+    {
+      "asset": "force-free-extrapolations-card.webp",
+      "paper_or_project_title": "Probing the solar coronal magnetic field with physics-informed neural networks",
+      "figure": "4, upper-left field-line panel",
+      "source_url": "https://www.nature.com/articles/s41550-023-02030-9/figures/4",
+      "download_url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41550-023-02030-9/MediaObjects/41550_2023_2030_Fig4_HTML.png",
+      "license": "Version-of-record publisher figure; no Creative Commons license asserted. The separate Research Square preprint is CC BY 4.0.",
+      "crop": [
+        0,
+        0,
+        758,
+        480
+      ],
+      "processing": "Converted to WebP, quality 89; full figures resized to fit within 1700 × 2100 px without changing content.",
+      "notes": "Pixel rectangle in the original 1057 × 958 figure; card crop only."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "file": "euv-tomography-poles.jpg",
+    "paper_title": "SuNeRF: 3D Reconstruction of the Solar EUV Corona Using Neural Radiance Fields",
+    "figure": "3",
+    "source_url": "https://doi.org/10.3847/2041-8213/ad12d2",
+    "download_url": "https://arxiv.org/html/2401.16388v1/global_view.jpg",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "processing": "Full figure; resized preserving aspect ratio and JPEG compressed.",
+    "dimensions": [
+      2000,
+      2593
+    ],
+    "sha256": "dc50a1469cb49afa08496504ad4d5a4c6fae327c637ffb63c68d5a6d676e4298",
+    "retrieved": "2026-09-13"
+  },
+  {
+    "file": "euv-tomography-thumb.jpg",
+    "paper_title": "SuNeRF: 3D Reconstruction of the Solar EUV Corona Using Neural Radiance Fields",
+    "figure": "3a (central south-pole panel)",
+    "source_url": "https://doi.org/10.3847/2041-8213/ad12d2",
+    "download_url": "https://arxiv.org/html/2401.16388v1/global_view.jpg",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "processing": "Cropped original 2048x2655 figure to pixel box [500,20,1628,1145], then resized to 1000 pixels wide. Card illustration; complete labeled figure appears on project page.",
+    "dimensions": [
+      1000,
+      997
+    ],
+    "sha256": "41d685c7723c41e9aa167cb1b207926de5a8bb73efc8e499be95ec3cb9044c08",
+    "retrieved": "2026-09-13"
+  },
+  {
+    "file": "euv-tomography-eruption.jpg",
+    "paper_title": "SuNeRF: 3D Reconstruction of the Solar EUV Corona Using Neural Radiance Fields",
+    "figure": "5",
+    "source_url": "https://doi.org/10.3847/2041-8213/ad12d2",
+    "download_url": "https://arxiv.org/html/2401.16388v1/eruption.jpg",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "processing": "Full figure; resized preserving aspect ratio and JPEG compressed.",
+    "dimensions": [
+      2000,
+      1618
+    ],
+    "sha256": "a9f460d9a6d2930cc87074f02d97dff61d634bac408e1833e9415c487d1511a3",
+    "retrieved": "2026-09-13"
+  },
+  {
+    "file": "euv-tomography-validation.jpg",
+    "paper_title": "SuNeRF: Validation of a 3D Global Reconstruction of the Solar Corona Using Simulated EUV Images",
+    "figure": "3",
+    "source_url": "https://arxiv.org/abs/2211.14879",
+    "download_url": "https://arxiv.org/pdf/2211.14879",
+    "license": "arXiv nonexclusive distribution license: https://arxiv.org/licenses/nonexclusive-distrib/1.0/ ; no Creative Commons license indicated. Figure from the site author's coauthored paper.",
+    "processing": "PDF page 4 rendered at 240 dpi with pdftoppm. Cropped full figure to pixel box [402,232,1644,1718], removing page text/caption. No changes to plotted content.",
+    "dimensions": [
+      1242,
+      1486
+    ],
+    "sha256": "fecc1c90c6885c167f4179335d9f84a2e6082cbc38408cf3913bebcd4b96d33d",
+    "retrieved": "2026-09-13"
+  }
+]
